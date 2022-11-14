@@ -1,0 +1,84 @@
+<%- include("partails/nav") %>
+
+<div class="fondo">
+<div class="containerBox">
+  <div class="container">
+    <form  id="form" action="/home" method="post">
+        <h1 >Añadir Paciente</h1>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label>ID</label>
+            <input type="text" name="patientId" class="form-control" placeholder="id del Paciente" />
+          </div>
+          <div class="form-group col-md-6">
+            <label>Nombre</label>
+            <input type="text" name="name" class="form-control" placeholder="Nombre del Paciente" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label>Edad</label>
+            <input type="number" name="age" class="form-control" placeholder="Edad del Paciente" />
+          </div>
+          <div class="form-group col-md-6">
+            <label>Numero de Telefono</label>
+            <input type="number" name="mobileNo" class="form-control" placeholder="Numero de Telefono" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label>E-mail</label>
+            <input type="email" name="email" class="form-control" placeholder="Direccion de Email" />
+          </div>
+          <div class="form-group col-md-6">
+            <label>Siguiente Cita</label>
+            <input type="datetime-local" name="date" class="form-control" placeholder="Fecha de Cita" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label>Direccion</label>
+            <input
+            type="text"
+            name="address"
+            class="form-control"
+            placeholder="Casaa, apartmento, estudio, o piso"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label>Enfermedad</label>
+            <input
+              type="text"
+              name="disease"
+              class="form-control"
+              placeholder="Nombre de Enfermedad"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-3">
+            <label>Tarifa</label>
+            <input
+            type="number"
+            name="fees"
+            class="form-control"
+            placeholder="Total de Tarifa"
+            />
+          </div>
+        </div>
+
+        <div class=" d-flex justify-content-center mt-5">
+          <button type="submit" class="btn btn-primary ">Añadir</button>
+        </div>
+        <br>
+      </form>
+    </div>
+</div>
+</div>
+
+
+</body>
+</html>

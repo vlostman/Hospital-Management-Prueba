@@ -1,0 +1,32 @@
+    <%- include("partails/header") %>
+    <link rel="stylesheet" href="../../public/css/login.css" />
+
+    <div class="content">
+      <form action="/" method="post" class="loginPage">
+        <div class="top">
+          <h5>Sistema de Administracion de Pacientes</h5>
+          
+        </div>
+        <div class="login">
+          <h1 class="text-secondary">Registro</h1>
+          <h5>Introduce los Datos</h5>
+          <input type="email"  name="username" placeholder="Introduce un E-mail" autocomplete="email" required autofocus />
+          <i class="fas fa-envelope"></i>
+          <input type="password" name="password"  class="password" placeholder="Introduce una contraseña" required autofocus autocomplete="current-password" >
+          <i class="fas fa-eye-slash " id="eye"></i>
+          <div>
+            <button type="submit" class="btn lgBtn">Registro</button>
+          </div>
+        </div>
+      </form>
+    </div>
+   
+     <!-- script -->
+     <script
+     src="https://code.jquery.com/jquery-3.6.0.js"
+     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+     crossorigin="anonymous"
+   ></script>
+   <script src="../public/js/functions.js"></script>
+  </body>
+</html>

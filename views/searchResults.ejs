@@ -1,0 +1,89 @@
+<%- include("partails/nav") %>
+
+<div class="fondo">
+<div class="containerBox">
+  <div class="container">
+    <form  id="form" >
+        <h1 >Actualizar Datos del Paciente</h1>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label>ID</label>
+            <input type="text" name="patientId" value="<%= patientId %>" class="form-control" placeholder="ID del Paciente" />
+          </div>
+          <div class="form-group col-md-6">
+            <label>Nombre</label>
+            <input type="text" name="name" value="<%= name %>" class="form-control" placeholder="Nombre del Paciente" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label>Edad</label>
+            <input type="number" name="age"  value="<%= age %>" class="form-control" placeholder="Edad del Paciente" />
+          </div>
+          <div class="form-group col-md-6">
+            <label>Telefono</label>
+            <input type="number" name="mobileNo"  value="<%= mobileNo %>" class="form-control" placeholder="Telefono del Paciente" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label><E-mail></E-mail></label>
+            <input type="email" name="email" value="<%= email %>" class="form-control" placeholder="Direccion de Email" />
+          </div>
+          <div class="form-group col-md-6">
+            <label>Siguiente Fecha de Cita</label>
+            <input type="datetime"  name="date" value="<%= date %>" class="form-control" placeholder="Fecha de Cita" />
+            
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label>Direccion</label>
+            <input
+            type="text"
+            name="address"
+            value="<%= address %>"
+            class="form-control"
+            placeholder="Apartment, studio, or floor"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label>Enfermedad</label>
+            <input
+              type="text"
+              name="disease"
+              value="<%= disease %>"
+              class="form-control"
+              placeholder="disease name"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-3">
+            <label>Tarifa</label>
+            <input
+            type="number"
+            name="fees"
+            value="<%= fees %>"
+            class="form-control"
+            placeholder="Total fees"
+            />
+          </div>
+        </div>
+
+
+        <div class=" d-flex justify-content-center mt-5">
+          <a href="/home" class="btn btn-primary ">Regresar a Inicio</a>
+        </div>
+        <br>
+      </form>
+    </div>
+</div>
+</div>
+
+
+</body>
+</html>
